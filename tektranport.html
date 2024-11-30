@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="aset/dzlogo.png">
+    <meta nama="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DynaPuff:wght@400..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="tektransport.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!-- link animasi scroll -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<!-- derris XI RPL2 -->
+<!-- detail nya responsive di semua device dekstop sama mobile -->
+<body>
+    <!-- ini nav bro -->
+    <nav class="navbar fixed-top" id="nav">
+        <div class="container-fluid nav-child">
+            <div class="logo">
+                <a class="navbar-brand fw-bold text-white" href="#">Digital</a>
+            </div>
+            <button class="rounded-5" style="border: none; background-color: transparent;" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation">
+                <div class="menu-icon">
+                    <i class="ph ph-list"></i>
+                </div>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fs-3 text-dark" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" id="nav_a" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item kontak">
+                            <a class="nav-link active fs-5" id="nav_a" aria-current="page" href="#">About</a>
+                            <!-- popup about -->
+                            <div class="popup">
+                                <div class="popup-nav">
+                                    <span class="close">&times;</span>
+                                    <section id="about">
+                                        <div class="about d-flex justify-content-center">
+                                            <div class="container-about">
+                                                <div class="about-images" data-aos="fade-right" data-aos-duration="1000"
+                                                    data-aos-delay="">
+                                                    <img src="https://asset-a.grid.id/crop/0x0:0x0/700x465/photo/2019/10/07/2315505072.jpg"
+                                                        alt="">
+                                                </div>
+                                                <div class="text-about">
+                                                    <h1>About</h1>
+                                                    <p>Aplikasi transportasi adalah perangkat lunak yang dirancang untuk
+                                                        membantu pengguna dalam mengakses layanan transportasi dengan
+                                                        lebih mudah, cepat, dan efisien. Aplikasi ini biasanya tersedia
+                                                        di perangkat smartphone dan menawarkan berbagai fitur, mulai
+                                                        dari pemesanan transportasi, navigasi, hingga penyewaan
+                                                        kendaraan.</p>
+                                                    <p><b
+                                                            style="background-color: tomato; padding: 0px 3px 0px;">motto:</b>
+                                                        "Mudah, Cepat, dan Tepat Waktu."</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active fs-5" id="nav_a" aria-current="page" href="contact.html">kontak</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Sejarah aplikasi transportasi
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#satu">gojek</a></li>
+                                <li><a class="dropdown-item" href="#dua">grab</a></li>
+                                <li><a class="dropdown-item" href="#tiga">Maxim</a></li>
+                                <li><a class="dropdown-item" href="#empat">Traveloka</a></li>
+                                <li><a class="dropdown-item" href="#lima">Mybluebird</a></li>
+                                <li><a class="dropdown-item" href="#enam">KAI accsess</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bottom referesh sccroll -->
+    <div class="nav_bottom">
+        <a href="">
+            <i class="ph ph-arrow-up"></i>
+        </a>
+    </div>
+    <!-- hero section/ judul website,tema -->
+    <div class="containers">
+        <div class="isi-containers">
+            <div class="judul-card">
+                <h1>Pengenalan</h1>
+                <h1>Teknologi Aplikasi di Bidang</h1>
+                <h1><span id="objek">Transportasi</span></h1>
+                <div class="btn-lanjut">
+                    <a href="#project">
+                        <b>View more</b>
+                    </a>
+                </div>
+                <br>
+            </div>
+            <div class="card-judul">
+                <img src="img/ui-intro.png" alt="" id="hp-icon">
+            </div>
+        </div>
+    </div>
+
+    <!-- content/artikel penjelasan produk -->
+    <section id="project">
+        <div class="judul-project">
+            <h1>Contoh aplikasi</h1>
+            <div class="icon-project">
+                <i class="ph ph-caret-right" id="icon-project"></i>
+            </div>
+        </div>
+        <div class="project d-flex gap-2">
+            <div class="kartu_project bg_project1">
+                <div class="isi-kartu">
+                    <h2>Aplikasi Grab</h2>
+                    <p>Lihat selengkapnya</p>
+                </div>
+            </div>
+            <div class="kartu_project bg_project2">
+                <div class="isi-kartu">
+                    <h1>Aplikasi Gojek</h1>
+                    <p>Lihat selengkapnya</p>
+                </div>
+            </div>
+            <div class="kartu_project bg_project3">
+                <div class="isi-kartu">
+                    <h1>Aplikasi Maxim</h1>
+                    <p>Lihat selengkapnya</p>
+                </div>
+            </div>
+            <div class="kartu_project bg_project4" id="none">
+                <div class="isi-kartu">
+                    <h1>Aplikasi Traveloka</h1>
+                    <p>Lihat selengkapnya</p>
+                </div>
+            </div>
+            <div class="kartu_project bg_project5" id="none">
+                <div class="isi-kartu">
+                    <h1>Aplikasi Mybluebird</h1>
+                    <p>Lihat selengkapnya</p>
+                </div>
+            </div>
+            <div class="kartu_project bg_project6" id="none">
+                <div class="isi-kartu">
+                    <h1>Aplikasi Kai Access</h1>
+                    <p>Lihat selengkapnya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- judul poster transporatsi -->
+    <section id="poster">
+        <div class="box-poster">
+            <img src="img/poster-tektrans.png" class="jdl-poster">
+            <div class="isi-poster">
+                <h1>perkembangan teknologi transportasi</h1>
+                <p>Perkembangan teknologi aplikasi transportasi menunjukkan bahwa inovasi terus berlanjut, memberikan
+                    kemudahan dan efisiensi bagi masyarakat dalam bertransportasi apabila ada kesahalan infofrmasi atau
+                    berbagi seputar teknologi, pesan dan saran hub kami dengan mengisi inputan yang <a
+                        href="contact.html">tersedia</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- gojek -->
+    <section id="jurusan">
+        <div class="box_jurusan1 d-flex justify-content-center gap-5 " id="satu">
+            <!-- memakai id supaya berpinndah tiap nav link nya di klik -->
+            <div class="text-jurusan">
+                <h1><span>Gojek</span></h1>
+                <p>Gojek adalah aplikasi super (super app) asal Indonesia yang menyediakan berbagai layanan
+                    transportasi, pengiriman barang, makanan, hingga pembayaran digital.
+                    <br>
+                <ul>
+                    <H2>Sejarah</H2>
+                    <li>Didirikan: Tahun 2010 oleh Nadiem Makarim, Kevin Aluwi, dan Michaelangelo Moran.</li>
+                    <li>Awalnya, Gojek hanya berupa layanan call center untuk memesan ojek. Saat itu, Nadiem melihat
+                        potensi besar pada jasa ojek, terutama dalam membantu masyarakat di kota besar seperti Jakarta.
+                    </li>
+                    <li>Pada tahun 2015, Gojek meluncurkan aplikasi mobile dengan fitur utama seperti GoRide (ojek
+                        motor), GoSend (pengiriman barang), dan GoFood (pesan-antar makanan).</li>
+                </ul>
+                </br>
+                </p>
+            </div>
+            <div class="image-jurusan" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="">
+                <img src="img/ui1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- grab -->
+    <section id="jurusan" class="jurusan justify-content-center d-flex">
+        <div class="box_jurusan2 d-flex justify-content-center" id="dua">
+            <div class="image-jurusan" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="">
+                <img src="img/ui1.png" alt="">
+            </div>
+            <div class="text-jurusan">
+                <h1><span>Grab</span></h1>
+                <p>Grab adalah aplikasi ride-hailing asal Malaysia yang kini menjadi salah satu platform transportasi
+                    dominan di Asia Tenggara, termasuk Indonesia.
+                    <br>
+                <ul>
+                    <h2>Sejarah</h2>
+                    <li>Didirikan: Tahun 2012 oleh Anthony Tan dan Tan Hooi Ling di Malaysia.</li>
+                    <li>Masuk ke Indonesia pada tahun 2014 dengan nama awal MyTeksi, yang kemudian diubah menjadi Grab.
+                    </li>
+                    <li>Grab memperkenalkan layanan GrabBike di Indonesia pada 2015, untuk bersaing dengan Gojek.
+                        Selanjutnya, Grab juga menambahkan layanan GrabCar (mobil), GrabExpress (pengiriman), dan
+                        GrabFood (pengantaran makanan).</li>
+                </ul>
+                </br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- maxim -->
+    <section id="jurusan">
+        <div class="box_jurusan1 d-flex justify-content-center gap-5 " id="tiga">
+            <div class="text-jurusan">
+                <h1><span>Maxim</span></h1>
+                <p>Maxim adalah aplikasi transportasi online asal Rusia yang mulai beroperasi di Indonesia
+                    dan mulai di pakai masyarakat
+                    <br>
+                <ul>
+                    <H2>Sejarah</H2>
+                    <li>Didirikan: Tahun 2003 di Rusia oleh tim pengembang lokal.</li>
+                    <li>Masuk ke Indonesia pada 2018 dengan fokus di kota-kota kecil hingga menengah untuk memberikan
+                        alternatif transportasi online..</li>
+                    <li>Maxim menawarkan layanan transportasi motor, mobil, hingga pengiriman barang dengan harga yang
+                        kompetitif.</li>
+                </ul>
+                </br>
+                </p>
+            </div>
+            <div class="image-jurusan" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="">
+                <img src="img/ui2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- traveloka -->
+    <section id="jurusan">
+        <div class="box_jurusan2 d-flex justify-content-center gap-5 " id="empat">
+            <div class="image-jurusan" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="">
+                <img src="img/ui3.png" alt="">
+            </div>
+            <div class="text-jurusan">
+                <h1><span>Traveloka</span></h1>
+                <p>Traveloka adalah aplikasi berbasis teknologi yang menyediakan layanan pemesanan tiket transportasi
+                    (pesawat, kereta api, bus), akomodasi (hotel, apartemen, vila), hingga berbagai kebutuhan perjalanan
+                    seperti paket wisata, sewa mobil, dan asuransi perjalanan. Aplikasi ini menjadi salah satu platform
+                    terbesar di Asia Tenggara yang mendukung kebutuhan perjalanan masyarakat secara digital.
+                    <br>
+                <ul>
+                    <H2>Sejarah</H2>
+                    <li>Didirikan: Tahun 2012</li>
+                    <li>Pendiri: Ferry Unardi, Derianto Kusuma, dan Albert Zhang</li>
+                    <li>Kantor Pusat: Jakarta, Indonesia</li>
+                </ul>
+                </br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- mybluebird -->
+    <section id="jurusan">
+        <div class="box_jurusan1 d-flex justify-content-center gap-5 " id="lima">
+            <div class="text-jurusan">
+                <h1><span>Mybluebird</span></h1>
+                <p>MyBlueBird adalah aplikasi transportasi berbasis mobile yang dikembangkan oleh Blue Bird Group,
+                    salah satu perusahaan transportasi terbesar di Indonesia.
+                    <br>
+                <ul>
+                    <H2>Sejarah</H2>
+                    <li>Blue Bird Group didirikan pada tahun 1972 oleh Mutiara Siti Fatimah Djokosoetono, dengan tujuan
+                        menyediakan layanan transportasi yang nyaman, aman, dan dapat diandalkan. Perusahaan ini awalnya
+                        hanya melayani transportasi taksi konvensional.</li>
+                    <li>Seiring perkembangan teknologi dan perubahan pola perilaku konsumen, Blue Bird Group memutuskan
+                        untuk mengembangkan layanan berbasis digital. Pada tahun 2011, aplikasi MyBlueBird pertama kali
+                        diluncurkan untuk memberikan pengalaman baru dalam pemesanan taksi.</li>
+                </ul>
+                </br>
+                </p>
+            </div>
+            <div class="image-jurusan" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="">
+                <img src="img/ui4.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- kAI accsess -->
+    <section id="jurusan">
+        <div class="box_jurusan2 d-flex justify-content-center gap-5 " id="enam">
+            <div class="image-jurusan" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="">
+                <img src="img/ui5.png" alt="">
+            </div>
+            <div class="text-jurusan">
+                <h1><span>KAI accsess</span></h1>
+                <p>KAI Access adalah aplikasi resmi yang dirilis oleh PT Kereta Api Indonesia (Persero) untuk memudahkan
+                    penumpang dalam melakukan berbagai layanan terkait perjalanan kereta api.
+                    <br>
+                <ul>
+                    <H2>Sejarah</H2>
+                    <li>Sebelum adanya aplikasi, sistem pemesanan tiket kereta api masih dilakukan secara manual melalui
+                        loket stasiun atau agen perjalanan. Hal ini sering menimbulkan antrian panjang dan
+                        ketidaknyamanan bagi penumpang.</li>
+                    <li>Pada 2012, PT KAI mulai menerapkan sistem tiket elektronik untuk meningkatkan efisiensi dan
+                        akurasi data pemesanan. Namun, pemesanan masih terbatas melalui website resmi.</li>
+                    <li>Pada 2014, KAI Access dirilis untuk memberikan solusi yang lebih praktis dan menjangkau pengguna
+                        smartphone yang jumlahnya semakin meningkat.</li>
+                </ul>
+                </br>
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- footer akhir bagia content -->
+    <section>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2025 dz30 Semua Hak Dilindungi.</p>
+                <div class="kontak_sosial">
+                    <i class="ph ph-instagram-logo"></i>
+                    <i class="ph ph-x-logo"></i>
+                    <i class="ph ph-linkedin-logo"></i>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="">Beranda</a></li>
+                    <li><a class="">Tentang Kami</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+    <!-- script js/libray -->
+    <script src="tektransport.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
